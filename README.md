@@ -2,6 +2,11 @@
 
 A modern, responsive React single-page application for a gardening company featuring smooth scrolling animations and dynamic background changes.
 
+
+https://github.com/user-attachments/assets/979fda44-52ca-446a-af93-00ea10d6d071
+
+
+
 ## Features
 
 ✨ **8 Interactive Sections:**
