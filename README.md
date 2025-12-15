@@ -1,70 +1,102 @@
-# Getting Started with Create React App
+# GreenScape Gardens - Modern Gardening Website
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A modern, responsive React single-page application for a gardening company featuring smooth scrolling animations and dynamic background changes.
+
+## Features
+
+✨ **8 Interactive Sections:**
+1. **Hero Section** - Animated introduction with company branding
+2. **Previous Work Gallery** - Showcase of lawn care projects with hover effects
+3. **Company Description** - About the company with statistics
+4. **Location Map** - Interactive Google Maps integration with contact info
+5. **Video Showcase** - Embedded YouTube video demonstrating skills
+6. **About Us** - Team members and company values
+7. **Services** - Detailed service offerings with feature lists
+8. **Contact Form** - Interactive contact form with validation
+
+🎨 **Modern Design Features:**
+- Smooth scroll animations using Framer Motion
+- Dynamic background color changes on scroll
+- Glassmorphism UI elements with backdrop blur effects
+- Responsive design for all screen sizes
+- Custom scrollbar styling
+- Hover animations and micro-interactions
+
+🚀 **Technical Stack:**
+- React 18
+- Framer Motion for animations
+- React Intersection Observer for scroll detection
+- CSS3 with modern features (backdrop-filter, gradients)
+- Responsive grid layouts
+
+## Getting Started
+
+### Prerequisites
+- Node.js (version 14 or higher)
+- npm or yarn
+
+### Installation
+
+1. Navigate to the project directory:
+```bash
+cd gardening-app
+```
+
+2. Install dependencies:
+```bash
+npm install
+```
+
+3. Start the development server:
+```bash
+npm start
+```
+
+4. Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
 ## Available Scripts
 
-In the project directory, you can run:
+- `npm start` - Runs the app in development mode
+- `npm run build` - Builds the app for production
+- `npm test` - Launches the test runner
+- `npm run eject` - Ejects from Create React App (one-way operation)
 
-### `npm start`
+## Customization
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+### Changing Background Colors
+Edit the `bgColor` values in the `sections` array in `src/App.js`:
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+```javascript
+const sections = [
+  { id: 'hero', component: Hero, bgColor: '#2d5016' },
+  // ... other sections
+];
+```
 
-### `npm test`
+### Adding New Sections
+1. Create a new component in `src/components/`
+2. Add the component to the sections array in `App.js`
+3. Import the component at the top of `App.js`
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### Modifying Content
+- **Images**: Replace image URLs in component files with your own
+- **Text**: Edit the content directly in each component
+- **Styling**: Modify the corresponding CSS files in `src/components/`
 
-### `npm run build`
+## Browser Support
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+- Chrome (latest)
+- Firefox (latest)
+- Safari (latest)
+- Edge (latest)
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## Performance Features
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+- Lazy loading of images
+- Optimized animations with GPU acceleration
+- Efficient scroll event handling
+- Responsive image sizing
 
-### `npm run eject`
+## License
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+This project is open source and available under the [MIT License](LICENSE).
